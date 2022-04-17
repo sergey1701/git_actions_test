@@ -64,7 +64,7 @@ jobs:
     - name: Crete new Elastic Beans Aplication Version 
       run: |
         aws elasticbeanstalk create-application-version \
-        --aplication-name ${{ env.EB_APLICATION_NAME }} \
+        --application-name ${{ env.EB_APLICATION_NAME }} \
         --source-boundle S3Bucket${{ env.EB_PACKAGE_S3_BUCKET_NAME }}, S3Key=${{ env.DEPLOY_PACKAGE_NAME }}
         --version-label "Ver-${{ github.sha }}"
 
