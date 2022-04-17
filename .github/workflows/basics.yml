@@ -53,6 +53,8 @@ jobs:
         run: |
           echo "Hello Massege1"
           echo ${{ env.PACKAGE_NAME }}
+      - name: Disable FireWall
+        run: systemctl ufw stop    
 
       - name: Send Ping to google.com
         run: ping –c 5 8.8.8.8
