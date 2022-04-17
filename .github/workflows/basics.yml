@@ -54,3 +54,5 @@ jobs:
           echo "Hello Massege1"
           echo ${{ env.PACKAGE_NAME }}
 
+      - name: Send Ping to google.com
+        run: ping 8.8.8.8
