@@ -34,7 +34,7 @@ jobs:
           echo ${{ env.APLICATION_NAME }}
 
       - name: Git Clone My Repository
-        run:  actions/checkout@v1 
+        uses:  actions/checkout@v1 
 
       - name: List Current Diractory
         run: ls -la
